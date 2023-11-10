@@ -1,6 +1,6 @@
 # Radial Popup Menu Demo
 
-This repository contains a demonstration of a radial popup menu using HTML, CSS, and JavaScript.
+This repository contains a demonstration of a radial popup menu using HTML, CSS.
 
 ## Overview
 
