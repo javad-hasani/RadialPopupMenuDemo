@@ -1,3 +1,41 @@
+#menu:not(:target) .menu-item {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 500ms, visibility 500ms;
+}
+
+#menu:target > .menu-item {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity 500ms, visibility 500ms, transform 0s; /* اضافه کردن transform 0s */
+}
+
+#menu:target > .menu-item:nth-child(6) {
+  transform: rotate(90deg) translateX(-150px) rotate(-90deg);
+  transition-delay: 0s;
+  transition-duration: 0.5s; /* افزایش مدت زمان ترنزیشن */
+}
+
+#menu:target > .menu-item:nth-child(5) {
+  transform: rotate(45deg) translateX(-150px) rotate(9deg);
+  transition-delay: 0.1s;
+  transition-duration: 0.5s; /* افزایش مدت زمان ترنزیشن */
+}
+
+#menu:target > .menu-item:nth-child(3) {
+  transform: rotate(-45deg) translateX(-150px) rotate(9deg);
+  transition-delay: 0.2s;
+  transition-duration: 0.5s; /* افزایش مدت زمان ترنزیشن */
+}
+
+#menu:target > .menu-item:nth-child(4) {
+  transform: rotate(360deg) translateX(-150px) translateY(3px) rotate(9deg);
+  transition-delay: 0.3s;
+  transition-duration: 0.5s; /* افزایش مدت زمان ترنزیشن */
+}
+
 body {
   font-family: "Quicksand", sans-serif;
   text-align: center;
@@ -73,38 +111,4 @@ body {
   top: 0%;
   left: 0;
   text-decoration: none;
-}
-
-#menu:target > .menu-item:nth-child(6) {
-  transform: rotate(90deg) translateX(-150px) rotate(-90deg);
-  transition-delay: 0s;
-}
-
-#menu:target > .menu-item:nth-child(5) {
-  transform: rotate(45deg) translateX(-150px) rotate(9deg);
-  transition-delay: 0.1s;
-}
-
-#menu:target > .menu-item:nth-child(3) {
-  transform: rotate(-45deg) translateX(-150px) rotate(9deg);
-  transition-delay: 0.2s;
-}
-
-#menu:target > .menu-item:nth-child(4) {
-  transform: rotate(360deg) translateX(-150px) translateY(3px) rotate(9deg);
-  transition-delay: 0.3s;
-}
-
-#menu:not(:target) .menu-item {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 500ms, visibility 500ms;
-}
-
-#menu:target > .menu-item {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  transition: opacity 500ms, visibility 500ms;
 }
