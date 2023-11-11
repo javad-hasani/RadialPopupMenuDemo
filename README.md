@@ -14,4 +14,4 @@ To use this radial popup menu in your project, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/vadohasani-gif/RadialPopupMenuDemo.gitt
+   git clone https://github.com/vadohasani-gif/RadialPopupMenuDemo.git
